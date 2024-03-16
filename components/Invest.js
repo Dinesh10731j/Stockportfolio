@@ -60,6 +60,49 @@ const Invest = () => {
     <View>
     <Text>In Stock Today</Text>
      
+<View style={Style.container}>
+
+
+
+
+</View>
+
+
+
+<View style={Style.container}>
+<View>
+  <Image source={TeslaLogo} style={Style.stockLogo}/>
+</View>
+<View>
+  <Text>Tesla</Text>
+</View>
+<View>
+  <Text>$1000</Text>
+</View>
+</View>
+<View style={Style.container}>
+<View>
+  <Image source={AppleLogo} style={Style.stockLogo}/>
+</View>
+<View>
+  <Text>Apple</Text>
+</View>
+<View>
+  <Text>$8900</Text>
+</View>
+</View>
+<View style={Style.container}>
+<View>
+  <Image source={googleLogo} style={Style.stockLogo}/>
+</View>
+<View>
+  <Text>Google</Text>
+</View>
+<View>
+  <Text>$12900</Text>
+</View>
+</View>
+
 
 
         
@@ -90,7 +133,9 @@ const Style = StyleSheet.create({
     display:"flex",
     justifyContent:"space-between",
     flexDirection:"row",
-    gap:20,
+    flexWrap:"wrap",
+    gap:30,
+    marginTop:10,
   },
   stockLogo:{
     height:40,
